@@ -1,0 +1,107 @@
+.mobile-nav {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 75%;
+	padding: 16px 20px 50px;
+	background-color: $mobile-bg-color;
+	box-shadow: -2px 4px 4px 3px rgba(49, 46, 46, 0.09);
+	transition: transform 0.5s ease-in-out;
+	transform: translateY(-110%);
+
+	&-head {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: 0;
+			left: -20px;
+			width: calc(100% + 40px);
+			height: 1px;
+			background-color: rgba(217, 214, 214, 0.56);
+		}
+	} 
+
+	&-title {
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		font-size: 22px;
+		font-weight: 400;
+		color: $white-color;
+	}
+
+	&-body {
+		text-align: center;
+		color: $white-color;
+	}
+
+	&-contact {
+		margin-bottom: 33px;
+	}
+
+	&-phone {
+		display: block;
+		margin-bottom: 25px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $white-color;
+	} 
+	
+	&-email {
+		display: block;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $white-color;
+	}
+
+	&-social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		margin-bottom: 50px;
+	}
+
+	&-twitter img:hover,
+	&-instagram img:hover,
+	&-vk img:hover {
+		transition: 0.5s ease-in-out;
+		transform: rotate(360deg);
+	}
+
+	&-menu ul  {
+		display: flex;
+		flex-direction: column;
+		gap: 34px;
+	}
+
+	&-menu ul li a {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.5;
+		text-align: center;
+		color: $white-color;
+	}
+}
+/* Открывает меню для мобильных устройств */
+.is-active {
+	transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

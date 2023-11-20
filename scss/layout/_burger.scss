@@ -1,0 +1,68 @@
+/* Burger button start */
+.burger {
+    display: none;
+    position: relative;
+    z-index: 20;
+    width: 25px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    margin-right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &-line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $white-color;
+        transform: translateY(-50%);
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $white-color;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+    /* Прячет у кнопки бургер среднию линию */
+    .burger--active {
+        opacity: 0;
+    }
+    /* Поварачивает на 45 градусов вернию  линии кнопки бургер */
+    &--active::before {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    /* Поварачивает на 45 градусов  нижнию линии кнопки бургер */
+    &--active::after {
+        bottom: auto;
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    @media (max-width: 1199px) {
+        display: block;
+    }
+}
+
+/* Скрывает скрол при открытитии мобильного меню */
+.stop-scroll {
+    overflow: hidden;
+}
+/* Burger button end */
