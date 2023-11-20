@@ -18,14 +18,25 @@
 		}
 	}
 
+	&-left {
+		@media (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+	}
+
 	&-right {
+		max-width: 100%;
+		@media (max-width: 1199px) {
+			max-width: 95%;
+		}
 		&-title span {
 			display: block;
 			margin-bottom: 30px;
-			font-size: 52px;
+			font-size: 50px;
 			font-weight: 700;
 			color: $accent-color;
 			@media (max-width: 1199px) {
+				display: inline;
 				font-size: 48px;
 			}
 			@media (max-width: 991px) {
@@ -47,7 +58,7 @@
 			}
 			@media (max-width: 991px) {
 				max-width: 83%;
-				font-size: 14px;
+				font-size: 15px;
 			}
 		}
 	}
@@ -100,7 +111,7 @@
 }
 
 .title {
-	font-size: 52px;
+	font-size: 50px;
 	font-weight: 400;
 	line-height: 1.5;
 	color: $title-color;
@@ -109,6 +120,9 @@
 	}
 	@media (max-width: 991px) {
 		font-size: 38px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 25px;
 	}
 }
 
