@@ -2,31 +2,63 @@
   padding: 75px 100px;
 	background: linear-gradient(258deg, #DFEEFC 11.01%, rgba(167, 210, 251, 0.92) 92.77%);
 
-}
-.container {
-}
-.row {
-}
-.col-md-8 {
-}
-.price-background {
-}
-.price-content {
-}
-.title {
-}
-.title-price {
-}
-.price-descr {
-}
-.price-list {
-}
-.price-item {
-}
-.price-value {
-}
-.price-service {
+	
+	&-background {
+		padding: 55px 60px;
+		max-width: 100%;
+		width: 712px;
+		border-radius: 20px;
+		background-color: $button-color;
+	}
+
+	&-content {
+		margin-bottom: 70px;
+		padding: 10px;
+	}
+
+	&-title {
+		margin-bottom: 7px;
+		line-height: 1;
+		color: $white-color;
+		text-align: center;
+	}
+
+	&-descr {
+		font-size: 16px;
+		font-weight: 300;
+		color: $white-color;
+		text-align: center;
+	}
+
+	&-list li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px dashed $white-color;
+	}
+
+	&-item:not(:last-child) {
+		margin-bottom: 28px;
+	}
+	&-service {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: 300;
+		color: $white-color;
+	}
+	&-value {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: 700;
+		color: $white-color;
+	}
+	
+	&-thumbnail {
+		
+	}
+	&-img {
+		width: 731px;
+		height: 700px;
+	}
 }
 
-.price-img {
-}
