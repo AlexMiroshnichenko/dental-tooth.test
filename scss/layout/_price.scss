@@ -1,26 +1,48 @@
 .price {
-  padding: 75px 100px;
+  padding: 75px 0;
 	background: linear-gradient(258deg, #DFEEFC 11.01%, rgba(167, 210, 251, 0.92) 92.77%);
+	@media (max-width: 991px) {
+		padding: 50px 0;
+	}
 
-	
 	&-background {
 		padding: 55px 60px;
 		max-width: 100%;
 		width: 712px;
 		border-radius: 20px;
 		background-color: $button-color;
+		@media (max-width: 991px) {
+			margin: 0 auto;
+			width: 775px;
+		}
+		@media (max-width: 575px) {
+			padding: 40px 40px;
+		}
 	}
 
 	&-content {
 		margin-bottom: 70px;
 		padding: 10px;
+		@media (max-width: 1199px) {
+			margin-bottom: 50px;
+		}
+		@media (max-width: 575px) {
+			margin-bottom: 34px;
+		}
 	}
 
 	&-title {
 		margin-bottom: 7px;
 		line-height: 1;
 		color: $white-color;
+		text-wrap: balance;
 		text-align: center;
+		@media (max-width: 1199px) {
+			font-size: 40px;
+		}
+		@media (max-width: 575px) {
+			font-size: 32px;
+		}
 	}
 
 	&-descr {
@@ -39,26 +61,43 @@
 
 	&-item:not(:last-child) {
 		margin-bottom: 28px;
+		@media (max-width: 575px) {
+			margin-bottom: 20px;
+		}
 	}
+
 	&-service {
 		margin-bottom: 15px;
 		font-size: 18px;
 		font-weight: 300;
 		color: $white-color;
+		@media (max-width: 575px) {
+			font-size: 16px;
+		}
 	}
+
 	&-value {
 		margin-bottom: 15px;
 		font-size: 18px;
 		font-weight: 700;
 		color: $white-color;
+		@media (max-width: 575px) {
+			font-size: 16px;
+		}
 	}
 	
 	&-thumbnail {
-		
+		@media (max-width: 991px) {
+			display: none;
+		}
 	}
+
 	&-img {
 		width: 731px;
 		height: 700px;
+		@media (max-width: 1070px) {
+			height: 650px;
+		}
 	}
 }
 
