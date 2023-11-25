@@ -1,85 +1,150 @@
 .news {
   padding: 100px 0 100px;
-	border-color: $white-color;
-
-	&-title {
-		margin-bottom: 55px;
-		font-size: 52px;
-		text-align: center;
+  border-color: $white-color;
+	@media (max-width: 1199px) {
+		padding: 50px 50px;
 	}
-	
-	.card {
-		margin-bottom: 20px;
-		max-width: 100%;
-		width: 387px;
-		border-radius: 20px;
-		overflow: hidden;
-		background-color: $cardBgColor;
 
-		&-thumbnail {
-			padding: 15px 15px 25px;
-			overflow: hidden;
+  &-title {
+    margin-bottom: 55px;
+    font-size: 52px;
+    text-align: center;
+		@media (max-width: 1199px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 991px) {
+			font-size: 45px;
+		}
+		@media (max-width: 767px) {
+			font-size: 42px;
+		}
+		@media (max-width: 575px) {
+			font-size: 38px;
+		}
+  }
+
+	.inner {
+		&::-webkit-scrollbar {
+			background-color: transparent;
 		}
 
-		&-img {
-			width: 357px;
-			height: 260px;
-			border-radius: 19px;
-			background: rgba(46, 45, 45, 0.10);
+		&::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+      transparent 25%,
+      transparent 50%,
+    	 rgba(255, 255, 255, .25) 50%,
+    	 rgba(255, 255, 255, .25) 75%,
+      transparent 75%,
+      transparent);
+		}
+		
+		&::-webkit-scrollbar-track {
+    	box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    	background-color: #f9f9fd;
 		}
 
-		&-content {
-			padding: 0 30px 35px;
-		}
-
-		&-box {
+		@media (max-width: 767px) {
 			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+		}
+		
+		.card {
+			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 14px;
-		}
+			margin-bottom: 20px;
+			max-width: 100%;
+			width: 387px;
+			min-height: 580px;
+			border-radius: 20px;
+			overflow: hidden;
+			background-color: $cardBgColor;
+			@media (max-width: 1199px) {
+				min-height: 550px;
+			}
 
-		&-time, &-comments {
-			font-size: 14px;
-			font-weight: 400;
-			color: $timeColor;
-		}
+			&-thumbnail {
+				padding: 15px 15px 20px;
+				overflow: hidden;
+			}
 
-		&-comments strong {
-			margin-right: 5px;
-			font-weight: 700;
-			color: $title-color;
-		}
+			&-img {
+				width: 357px;
+				height: 260px;
+				border-radius: 19px;
+				background: rgba(46, 45, 45, 0.1);
+			}
 
-		&-title {
-			margin-bottom: 17px;
-			font-size: 22px;
-			font-weight: 400;
-			line-height: 1.3;
-			color: $title-color;
-		}
+			&-content {
+				display: flex;
+				flex-direction: column;
+				padding: 0 30px 30px;
+			}
 
-		&-descr {
-			margin-bottom: 26px;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 1.2;
-			color: $text-color;
-		}
+			&-box {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 14px;
+			}
 
-		&-link {
-			display: block;
-			padding: 15px 110px;
-			border-radius: 29px;
-			background-color: $button-color;
-			/* text */
-			font-size: 18px;
-			font-weight: 400;
-			text-align: center;
-			color: $white-color;
-		}
+			&-time,
+			&-comments {
+				font-size: 14px;
+				font-weight: 400;
+				color: $timeColor;
+			}
+
+			&-comments strong {
+				margin-right: 5px;
+				font-weight: 700;
+				color: $title-color;
+			}
+
+			&-title {
+				margin-bottom: 17px;
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 1.3;
+				color: $title-color;
+				@media (max-width: 1199px) {
+					margin-bottom: 20px;
+					font-size: 18px;
+				}
+			}
+
+			&-descr {
+				margin-bottom: 26px;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.2;
+				color: $text-color;
+				@media (max-width: 1199px) {
+					font-size: 15px;
+				}
+			}
+
+			&-link {
+				display: block;
+				padding: 15px 100px;
+				max-width: 100%;
+				border-radius: 29px;
+				background-color: $button-color;
+				/* text */
+				font-size: 16px;
+				font-weight: 400;
+				text-align: center;
+				color: $white-color;
+				transition: background-color .5s ease-in-out;
+				&:hover {
+					background-color: $hoverButton;
+				}
+				@media (max-width: 1199px) {
+					padding: 15px 59px;
+					font-size: 15px;
+				}
+			}
+  	}
 	}
 }
-
-
-:not(:nth-last-child(-n+4))
