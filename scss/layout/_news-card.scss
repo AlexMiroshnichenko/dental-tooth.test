@@ -31,7 +31,7 @@
 
 		&::-webkit-scrollbar-thumb {
 			border-radius: 10px;
-  		background: linear-gradient(180deg, #00c6fb, #005bea);
+  		background: linear-gradient(180deg, #00c6fb4a, #005bea54);
 		}
 		
 		&::-webkit-scrollbar-track {
@@ -45,7 +45,7 @@
 			flex-wrap: nowrap;
 			overflow-x: auto;
 		}
-		
+
 		.card {
 			position: relative;
 			margin-bottom: 20px;
@@ -60,7 +60,7 @@
 			}
 
 			&-thumbnail {
-				padding: 15px 15px 20px;
+				padding: 15px 15px 30px;
 				overflow: hidden;
 			}
 
@@ -144,3 +144,4 @@
   	}
 	}
 }
+

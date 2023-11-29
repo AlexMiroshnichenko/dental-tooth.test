@@ -1,0 +1,134 @@
+.reviews {
+	padding: 90px 0;
+  background-image: url('../img/reviews-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+	&-block {
+		position: relative;
+		margin: 0 auto;
+		padding: 55px 100px 80px;
+    max-width: 100%;
+		width: 1080px;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.90);
+	}
+
+	&-caption {
+		margin-bottom: 65px;
+		text-align: center;
+	}
+
+	&-title {
+		font-size: 52px;
+	}
+
+	&-item {
+		display: flex;
+		column-gap: 45px;
+	}
+
+	&-avatar img {
+		width: 240px;
+		height: 240px;
+		border-radius: 100%;
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		max-width: 500px;
+	}
+
+	&-text {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 175.2%;
+		color: $descr-color;
+	}
+
+	&-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-bottom span {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 175.2%;
+		color: $accent-color;
+	}
+
+	&-social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 20px;
+	}
+
+	&-social-tw,
+	&-social-vk {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background-color: #E7E7E7;
+		border-radius: 100%;
+		transition: background-color 0.5s ease-in-out;
+		&:hover {
+			background-color: $accent-color;
+		}
+	}
+
+	&-social a:hover svg path {
+		transition: fill 0.5s ease-in-out;
+	}
+	&-social a:hover svg path {
+		fill: $white-color;
+	}
+
+	&-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+		background-color: #C5C1FE;
+	}
+
+	svg {
+		display: block;
+		width: 25px;
+		height: 25px;
+		object-fit: cover;
+	}
+
+	&-btn-prev {
+		position: absolute;
+		top: 50%;
+		left: -30px;
+		transform: translateY(-50%);
+
+	}
+
+	&-btn-next {
+		position: absolute;
+		top: 50%;
+		right: -30px;
+		transform: translateY(-50%);
+
+	}
+}
+
