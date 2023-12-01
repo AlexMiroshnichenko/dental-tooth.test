@@ -13,6 +13,9 @@
 	@media (max-width: 767px) {
 		padding: 45px 20px;
 	}
+	@media (max-width: 375px) {
+		padding: 30px 20px;
+	}
 
 	&-block {
 		position: relative;
@@ -23,6 +26,9 @@
 		background: rgba(255, 255, 255, 0.90);
 		@media (max-width: 991px) {
 			padding: 35px;
+		}
+		@media (max-width: 375px) {
+			padding: 15px;
 		}
 	}
 
@@ -48,6 +54,9 @@
 		@media (max-width: 575px) {
 			font-size: 25px;
 		}
+		@media (max-width: 375px) {
+			font-size: 18px;
+		}
 	}
 
 	&-item {
@@ -56,9 +65,6 @@
 		column-gap: 40px;
 		width: 786px;
 		min-height: 240px;
-		@media (max-width: 991px) {
-			column-gap: 20px;;
-		}
 		@media (max-width: 767px) {
 			flex-direction: column;
 			row-gap: 20px;
@@ -73,6 +79,7 @@
 		@media (max-width: 991px) {
 			width: 200px;
 			height: 200px;
+			align-self: flex-start;
 		}
 		@media (max-width: 767px) {
 			align-self: center;
@@ -80,6 +87,10 @@
 		@media (max-width: 575px) {
 			width: 150px;
 			height: 150px;
+		}
+		@media (max-width: 375px) {
+			width: 130px;
+			height: 130px;
 		}
 	}
 
@@ -101,6 +112,9 @@
 		@media (max-width: 767px) {
 			max-width: 425px;
 		}
+		@media (max-width: 576px) {
+			max-width: 355px;
+		}
 	}
 
 	&-text {
@@ -111,9 +125,13 @@
 		@media (max-width: 991px) {
 			font-size: 16px;
 		}
-		@media (max-width: 575px) {
-			font-size: 10px;
+			@media (max-width: 575px) {
+			font-size: 12px;
 		}
+		@media (max-width: 375px) {
+			font-size: 8px;
+		}
+		
 	}
 
 	&-bottom {
@@ -128,7 +146,7 @@
 		line-height: 175.2%;
 		color: $accent-color;
 		@media (max-width: 991px) {
-			font-size: 26px;
+			font-size: 20px;
 		}
 		@media (max-width: 767px) {
 			font-size: 24px;
@@ -212,6 +230,18 @@
 			height: 35px;
 		}
 	}
+		&-btn-next {
+		position: absolute;
+		top: 50%;
+		left: -29px;
+		transform: translateY(-50%);
+		@media (max-width: 991px) {
+			left: -23px;
+		}
+		@media (max-width: 575px) {
+			left: -17px;
+		}
+	}
 		&-btn-prev {
 		position: absolute;
 		top: 50%;
@@ -222,19 +252,6 @@
 		}
 		@media (max-width: 575px) {
 			right: -17px;
-		}
-	}
-
-	&-btn-next {
-		position: absolute;
-		top: 50%;
-		left: -29px;
-		transform: translateY(-50%);
-		@media (max-width: 991px) {
-			left: -23px;
-		}
-		@media (max-width: 575px) {
-			left: -17px;
 		}
 	}
 }

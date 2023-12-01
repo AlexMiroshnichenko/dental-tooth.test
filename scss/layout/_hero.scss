@@ -1,28 +1,40 @@
 .hero {
-  background-color: $mobile-bg-color;
-	@media (max-width: 575px) {
-		padding-bottom: 40px;
+  background-color: $heroBgColor;
+
+	&-row {
+		@media (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
+	&-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
 	&-left {
-		padding: 179px 0 183px;
-		max-width: 95%;
+		max-width: 685px;
+		height: auto;
 		@media (max-width: 1199px) {
-			padding: 150px 0 105px;
-			max-width: 90%;
+			max-width: 97%;
 		}
 		@media (max-width: 991px) {
-			padding: 100px 0 50px;
+			padding: 50px 0;
 			max-width: 100%;
 		}
 		@media (max-width: 767px) {
-			padding: 70px 0 40px;
+			padding-top: 40px;
+			padding-bottom: 0;
+			max-width: 77%;
 		}
 		@media (max-width: 575px) {
-			margin: 0 auto;
-			padding: 35px 0 0;
-			max-width: 80%;
+			max-width: 100%;
 		}
-	
+		@media (max-width: 375px) {
+			padding-top: 30px;
+		}
+		
 		&-title {
 			position: relative;
 			margin-bottom: 11px;
@@ -30,11 +42,16 @@
 			font-weight: 400;
 			line-height: 1.5;
 			color: $ellipse-color;
-			@media (max-width: 917px) {
-				margin-bottom: 10px;
+			@media (max-width: 991px) {
+				font-size: 11px;
+			}
+			@media (max-width: 767px) {
 				font-size: 12px;
 			}
-			
+			@media (max-width: 375px) {
+				font-size: 8px;
+			}
+		
 			&::before {
 				content: "";
 				position: absolute;
@@ -53,19 +70,21 @@
 
 		&-subtitle {
 			margin-bottom: 20px;
-			font-size: 62px;
+			font-size: 52px;
 			font-weight: 700;
 			line-height: 105.7%;
 			color: $white-color;
-			@media (max-width: 1199px) {
-				font-size: 52px;
-			}
 			@media (max-width: 991px) {
-				font-size: 48px;
+				font-size: 42px;
 			}
 			@media (max-width: 767px) {
-				margin-bottom: 10px;
-				font-size: 38px;
+				font-size: 50px;
+			}
+			@media (max-width: 575px) {
+				font-size: 40px;
+			}
+			@media (max-width: 375px) {
+				font-size: 37px;
 			}
 		}	
 
@@ -79,30 +98,29 @@
 				font-size: 16px;
 			}
 			@media (max-width: 991px) {
-				font-size: 14px;
+				font-size: 13px;
 			}
 			@media (max-width: 767px) {
-				font-size: 14px;
+				margin-bottom: 10px;
+				font-size: 15px;
 			}
 			@media (max-width: 575px) {
-				display: none;
+				font-size: 13px;
 			}
-			
-		}
-
+			@media (max-width: 375px) {
+				font-size: 10px;
+			}
+		}	
+		
 		&-btn {
 			width: 255px;
 			height: 59px;
 			border-radius: 29px;
 			@media (max-width: 991px) {
-				width: 243px;
-				height: 55px;
+				width: 200px;
+				height: 50px;
 			}
 			@media (max-width: 767px) {
-				width: 190px;
-				height: 45px;
-			}
-			@media (max-width: 575px) {
 				display: none;
 			}
 		}
@@ -113,16 +131,23 @@
 		justify-content: flex-end;
 	}
 	&-img {
-		@media (max-width: 575px) {
+		@media (max-width: 767px) {
 			margin-left: 40%;
-			width: 292px;
-			height: 445px;
+			width: 350px;
+			height: 440px;
 			transform: translateX(-40%);
 		}
+		@media (max-width: 575px) {
+			margin-left: 36%;
+		}
+		@media (max-width: 375px) {
+			margin-left: 34%;
+		}
 	}
+
 	.right-btn {
 		display: none;
-		@media (max-width: 575px) {
+		@media (max-width: 767px) {
 			display: block;
 			margin: 0 auto;
 			width: 286px;
@@ -147,7 +172,7 @@
 		text-align: center;
 		color: $white-color;
 		@media (max-width: 991px) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 		@media (max-width: 767px) {
 			font-size: 12px
