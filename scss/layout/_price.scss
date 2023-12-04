@@ -16,7 +16,10 @@
 			width: 775px;
 		}
 		@media (max-width: 575px) {
-			padding: 40px 40px;
+			padding: 20px 15px;
+		}
+		@media (max-width: 375px) {
+			padding: 15px;
 		}
 	}
 
@@ -41,7 +44,10 @@
 			font-size: 40px;
 		}
 		@media (max-width: 575px) {
-			font-size: 32px;
+			font-size: 27px;
+		}
+		@media (max-width: 375px) {
+			font-size: 26px;
 		}
 	}
 
@@ -50,6 +56,9 @@
 		font-weight: 300;
 		color: $white-color;
 		text-align: center;
+		@media (max-width: 575px) {
+			font-size: 12px;
+		}
 	}
 
 	&-list li {
@@ -74,6 +83,9 @@
 		@media (max-width: 575px) {
 			font-size: 16px;
 		}
+		@media (max-width: 375px) {
+			font-size: 14px;
+		}
 	}
 
 	&-value {
@@ -83,6 +95,9 @@
 		color: $white-color;
 		@media (max-width: 575px) {
 			font-size: 16px;
+		}
+		@media (max-width: 375px) {
+			font-size: 15px;
 		}
 	}
 	

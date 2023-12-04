@@ -4,6 +4,9 @@
 	@media (max-width: 1199px) {
 		padding: 65px 0
 	}
+	@media (max-width: 375px) {
+		padding: 50px 0;
+	}
 
 	&-item {
 		max-width: 100%;
@@ -54,6 +57,9 @@
 		@media (max-width: 991px) {
 			font-size: 24px;
 		}
+		@media (max-width: 375px) {
+			font-size: 20px;
+		}
 	}
 
 	&-descr {
@@ -65,8 +71,11 @@
 		@media (max-width: 1199px) {
 			font-size: 16px;
 		}
-			@media (max-width: 991px) {
+		@media (max-width: 991px) {
 			font-size: 18px;
+		}
+		@media (max-width: 375px) {
+			font-size: 14px;
 		}
 	}	
 }
