@@ -1,0 +1,127 @@
+.footer {
+	background-color: $footerBgColor;
+
+	&-left {
+		padding: 60px 30px 70px 0;
+		border-right: 1px solid rgba(180, 180, 180, 0.35);
+	}
+
+	&-logo {
+		display: inline-block;
+		margin-bottom: 80px;
+	}
+
+	&-contact {
+		max-width: 170px;
+		margin-bottom: 75px;
+	}
+
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		row-gap: 25px;
+	}
+
+	&-nav-link {
+		padding-left: 30px;
+		background-repeat: no-repeat;
+		background-position: left, center;
+		background-size: 20px 20px;
+	}
+
+	&-nav-location {
+		background-image: url('../img/location.svg');
+		display: inline-block;
+	}
+
+	&-nav-location span {
+		display: inline-block;
+	}
+
+	&-nav-phone {
+		background-image: url('../img/phone.svg');
+	}
+
+	&-nav-email {
+		background-image: url('../img/envelope.svg');
+	}
+
+	&-nav-location span {
+		font-size: 15px;
+		font-weight: 400;
+		color: $white-color;
+	}
+
+	&-nav-phone span, &-nav-email span {
+		font-size: 16px;
+		font-weight: 400;
+		color: $white-color;
+	}
+
+	&-social {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		column-gap: 30px;
+		
+		&-instagram img:hover, 
+		&-vk img:hover, 
+		&-twitter img:hover {
+			transition: 0.5s ease-in-out;
+			transform: rotate(360deg);
+		}
+	}
+
+	&-right{
+		display: flex;
+		justify-content: space-around;
+		column-gap: 85px;
+		padding: 60px 0 34px 50px;
+	}
+
+	&-right ul li a {
+		font-size: 16px;
+		font-weight: 400;
+		color: #E0E0E0;
+	}
+
+	&-title {
+		margin-bottom: 20px;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: $white-color;
+	}
+
+	&-servises ul {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	
+	&-dentists ul {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	
+	&-working ul {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&-bottom {
+		padding: 35px 0;
+		border-top: 1px solid rgba(180, 180, 180, 0.35);
+	}
+
+	&-copyright {
+		display: block;
+		font-size: 16px;
+		font-weight: 300;
+		text-align: center;
+		color: $copyText;
+	}
+}
+
