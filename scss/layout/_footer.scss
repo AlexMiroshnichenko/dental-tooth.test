@@ -24,6 +24,9 @@
 			padding: 20px 0 30px 0;
 			border-right: none;
 		}
+		@media (max-width: 575px) {
+			row-gap: 50px;
+		}
 	}
 
 	&-logo {
@@ -105,6 +108,10 @@
 			row-gap: 60px;
 			text-align: center;
 		}
+		@media (max-width: 575px) {
+			row-gap: 40px;
+			padding: 40px 0 40px 0;
+		}
 	}
 
 	&-right ul li a {
@@ -142,6 +149,9 @@
 	&-bottom {
 		padding: 35px 0;
 		border-top: 1px solid rgba(180, 180, 180, 0.35);
+		@media (max-width: 575px) {
+			padding: 25px 0;
+		}
 	}
 
 	&-copyright {
@@ -150,6 +160,9 @@
 		font-weight: 300;
 		text-align: center;
 		color: $copyText;
+		@media (max-width: 575px) {
+			font-size: 14px;
+		}
 	}
 }
 
