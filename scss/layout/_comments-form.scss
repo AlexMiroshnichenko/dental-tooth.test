@@ -1,9 +1,12 @@
 .comments {
     background-color: $white-color;
-    padding: 75px 0 45px;
+    padding: 75px 0 70px;
     
     &-inner {
         border-bottom: 1px solid #ECECEC;
+    }
+    &-offset {
+        padding: 0 10px 90px;
     }
     &-title {
         margin-bottom: 45px;
@@ -12,7 +15,6 @@
         line-height: 1.5;
         color:$title-color;
     }
-
     &-form input, textarea {
         appearance: none;
         margin-bottom: 20px;
@@ -39,7 +41,6 @@
     }
 
     &-form button {
-        margin-bottom: 45px;
         padding: 15px;
         width: 185px;
         border: 0;
@@ -75,6 +76,65 @@
        display: flex;
        align-items: center;
        justify-content: center;
+    }
+
+    &-list {
+        padding-top: 60px;
+    }
+
+    &-item {
+        padding: 0 15px;
+    }
+
+    &-body {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &-autor {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+  
+    &-autor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    &-content a time {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 300;
+        color: $colorDataComments;
+    }
+    
+    &-autor-name {
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 400;
+        color: $black-color;
+    }
+    &-text {
+        font-family: Gilroy;
+        font-size: 16px;
+        font-weight: 300;
+        color: $black-color;
+    }
+
+    &-content a span {
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration-line: underline;
+        color: $red-color;
     }
 }
 
