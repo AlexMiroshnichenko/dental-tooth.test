@@ -55,7 +55,7 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-row">
-                    <a href="#" class="header-bottom-logo">
+                    <a href="index.html" class="header-bottom-logo">
                         <img src="img/header-logo.svg" alt="Логотип клиники Dental Tooth">
                     </a>
                     <nav class="nav">
@@ -145,10 +145,10 @@
                         <nav class="nav" aria-label="breadcrumb">
                             <ul>
                                 <li>
-                                    <a href="#">Главная</a>
+                                    <a href="/index.html">Главная</a>
                                 </li>
                                 <li>
-                                    <a href="#">Блог</a>
+                                    <a href="/blog.html#">Блог</a>
                                 </li>
                                 <li>
                                     <a href="#">Что стоматолог может сделать для ваших зубов</a>
@@ -234,6 +234,37 @@
             </div>
         </section>
         <!-- SINGLE END  -->
+        <!-- COMMENTS START -->
+        <section class="comments">
+            <div class="container">
+                <div class="row comments-inner">
+                    <div class="col-5">
+                        <h2 class="title comments-title">Оставить комментарий</h2>
+                        <form action="" class="comments-form">
+                            <p>
+                                <input id="autor" placeholder="Ваше имя" name="autor" type="text">
+                            </p>
+                            <p>
+                                <input id="email" placeholder="Ваш email" name="email" type="text">
+                            </p>
+                            <p>
+                                <textarea id="text" name="comment" required="required" placeholder="Комментарий"></textarea>
+                            </p>
+                            <p>
+                                <button id="submit" type="submit">Отправить</button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col-5 offset-1 text-flex">
+                        <p class="comments-count">
+                            <span>1</span>комментарий о посте “Стоматология липкий”
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- COMMENTS END -->
     </main>
     <!-- HEADER END -->
     <!-- FOOTER START -->
@@ -366,18 +397,7 @@
     </footer>
     <!-- FOOTER END -->
     <script src="./js/libs/jquery-3.7.1.min.js"></script>
-    <script src="./js/libs/swiper-min.js"></script>
-    <script src="./js/swiper.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
 </html>
-
-<a href="#" class="single-link">
-    <img class="arrow-prev" src="./img/arrow-prev.svg" alt="arrow-prev">
-    <span>Все что Вы хотели узнать про сознательную седацию</span>
-</a>
-<a href="#" class="single-link">
-    <span>Как выбрать стоматологию и не ошибиться?</span>
-    <img class="arrow-next" src="./img/arrow-next.svg" alt="arrow-next">
-</a>

@@ -1,0 +1,81 @@
+.comments {
+    background-color: $white-color;
+    padding: 75px 0 45px;
+    
+    &-inner {
+        border-bottom: 1px solid #ECECEC;
+    }
+    &-title {
+        margin-bottom: 45px;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 1.5;
+        color:$title-color;
+    }
+
+    &-form input, textarea {
+        appearance: none;
+        margin-bottom: 20px;
+        padding: 20px 22px;
+        width: 100%;
+        border: 1px solid $inputColor;
+        border-radius: 10px;
+        background-color: $white-color;
+        outline: none;
+        transition: 0.3s background-color linear;
+        &:focus-within {
+           background-color: $cardBgColor;
+        }
+    }
+    &-form textarea {
+       height: 256px;
+    }
+
+    &-form input::placeholder, 
+        textarea::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        color: $inputText;
+    }
+
+    &-form button {
+        margin-bottom: 45px;
+        padding: 15px;
+        width: 185px;
+        border: 0;
+        border-radius: 26px;
+        background-color: $red-color;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white-color;
+        cursor: pointer;
+        transition: 0.5s background-color ease-in-out;
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+    
+    &-count {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.3;
+        text-align: center;
+        color: $title-color;
+    }
+
+    &-count span {
+        padding-right: 3px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: $title-color;
+    }
+
+    .text-flex {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+}
+
+
