@@ -1,10 +1,19 @@
 .single {
     padding: 65px 0 0;
     background-color: $white-color;
+    @media (max-width: 991px) {
+      padding: 50px 0 0;
+    }
+    @media (max-width: 767px) {
+      padding: 40px 0 0;
+    }
     &-thumbnail {
         display: block;
         margin-bottom: 35px;
         overflow: hidden;
+        @media (max-width: 991px) {
+            margin-bottom: 25px;
+        }
     }
     &-thumbnail img {
         border-radius: 20px;
@@ -12,10 +21,13 @@
     }
     &-box {
         margin-bottom: 25px;
+        @media (max-width: 991px) {
+            margin-bottom: 15px;
+        }
     }
     &-time,
     &-comments {
-        font-size: 14px;
+        font-size: clamp(10px, 2vw, 14px);
         font-weight: 400;
         color: $timeColor;
     }
@@ -24,32 +36,44 @@
     }   
     &-comments strong {
         margin-right: 3px;
-        font-size: 14px;
+        font-size: clamp(10px, 2vw, 14px);
         font-weight: 700;
         color: $title-color; 
     }
     &-heading {
         margin-bottom: 35px;
         max-width: 645px;
+        @media (max-width: 991px) {
+            margin-bottom: 25px;
+        }
     }
     &-title {
-        font-size: 52px;
+        font-size: clamp(24px, 5vw, 52px);
         line-height: 1.3;
     }
     &-content {
         margin-bottom: 75px;
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 575px) {
+            margin-bottom: 30px;
+        }
     }
     &-content p {
-        font-size: 18px;
+        font-size: clamp(12px, 2vw, 18px);
         font-weight: 400;
         line-height: 180.2%;
         color: $colorContent;
     }
     &-content p:not(:last-child) {
         margin-bottom: 35px;
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
     }
     &-content h4 {
-        font-size: 18px;
+        font-size: clamp(14px, 2vw, 18px);
         font-weight: 700;
         line-height: 180.2%;
         color: $colorContent;

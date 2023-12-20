@@ -4,12 +4,28 @@
     justify-content: space-between;
     padding-bottom: 70px;
     border-bottom: 1px solid #ECECEC;
+    @media (max-width: 991px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+    @media (max-width: 575px) {
+        padding-bottom: 30px;
+    }
     
     &-prev li a, 
     &-next li a {
         padding: 10px 10px;
         column-gap: 25px;
         transition: 0.5s color ease-in-out;
+        @media (max-width: 767px) {
+            column-gap: 20px;
+        }
+        @media (max-width: 575px) {
+            column-gap: 10px;
+            padding: 5px 5px;
+        }
     }
 
     &-prev li a:hover, 
@@ -33,6 +49,9 @@
         display: flex;
         align-items: center;
         column-gap: 25px;
+        @media (max-width: 575px) {
+          display: none;
+        }
     }
 
     &-number li a {
@@ -43,7 +62,7 @@
     &-page-link {
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: clamp(12px, 2vw, 18px);
         font-weight: 400;
         line-height: 170.7%;
         color: $text-color;

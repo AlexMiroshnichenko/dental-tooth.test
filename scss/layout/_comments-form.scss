@@ -1,19 +1,40 @@
 .comments {
     background-color: $white-color;
     padding: 75px 0 70px;
+    @media (max-width: 1199px) {
+        padding: 55px 0 50px;
+    }
+    @media (max-width: 991px) {
+        padding: 40px 0 50px;
+    }
+    @media (max-width: 767px) {
+        padding: 30px 0 50px;
+    }
     
     &-inner {
         border-bottom: 1px solid #ECECEC;
     }
     &-offset {
         padding: 0 10px 90px;
+        @media (max-width: 1199px) {
+            padding: 0 10px 50px;
+        }
+        @media (max-width: 767px) {
+            padding: 0 10px 30px;
+        }
     }
     &-title {
         margin-bottom: 45px;
-        font-size: 42px;
+        font-size: clamp(26px, 3.5vw, 42px);
         font-weight: 400;
         line-height: 1.5;
         color:$title-color;
+        @media (max-width: 1199px) {
+            margin-bottom: 35px;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
     }
     &-form input, textarea {
         appearance: none;
@@ -28,14 +49,20 @@
         &:focus-within {
            background-color: $cardBgColor;
         }
+        @media (max-width: 767px) {
+           padding: 15px 15px;
+        }
     }
     &-form textarea {
        height: 256px;
+       @media (max-width: 767px) {
+           height: 160px;
+        }
     }
 
     &-form input::placeholder, 
         textarea::placeholder {
-        font-size: 18px;
+        font-size: clamp(12px, 2vw, 18px);
         font-weight: 400;
         color: $inputText;
     }
@@ -54,19 +81,29 @@
         &:hover {
             background-color: $hover-color;
         }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        @media (max-width: 575px) {
+            padding: 10px;
+            font-size: 14px;
+        }
     }
     
     &-count {
-        font-size: 32px;
+        font-size: clamp(21px, 3.5vw, 32px);
         font-weight: 400;
         line-height: 1.3;
         text-align: center;
         color: $title-color;
+        @media (max-width: 767px) {
+          display: none;
+        }
     }
 
     &-count span {
         padding-right: 3px;
-        font-size: 32px;
+        font-size: clamp(21px, 3.5vw, 32px);
         font-weight: 700;
         line-height: 1.3;
         color: $title-color;
@@ -80,6 +117,9 @@
 
     &-list {
         padding-top: 60px;
+        @media (max-width: 1199px) {
+            padding-top: 40px;
+        }
     }
 
     &-item {
@@ -90,12 +130,20 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+        @media (max-width: 375px) {
+            flex-direction: column;
+            row-gap: 10px;
+        }
     }
     &-autor {
         width: 120px;
         height: 120px;
         border-radius: 100%;
         overflow: hidden;
+        @media (max-width: 575px) {
+            width: 100px;
+            height: 100px;
+        }
     }
   
     &-autor img {
@@ -112,26 +160,26 @@
 
     &-content a time {
         font-family: Gilroy;
-        font-size: 14px;
+        font-size: clamp(10px, 2vw, 14px);
         font-weight: 300;
         color: $colorDataComments;
     }
     
     &-autor-name {
         font-family: Gilroy;
-        font-size: 18px;
+        font-size: clamp(12px, 2vw, 18px);
         font-weight: 400;
         color: $black-color;
     }
     &-text {
         font-family: Gilroy;
-        font-size: 16px;
+        font-size: clamp(10px, 2.5vw, 16px);
         font-weight: 300;
         color: $black-color;
     }
 
     &-content a span {
-        font-size: 16px;
+        font-size: clamp(12px, 2vw, 16px);
         font-weight: 400;
         text-decoration-line: underline;
         color: $red-color;
