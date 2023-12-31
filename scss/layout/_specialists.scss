@@ -48,6 +48,10 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
+		transition: all 0.3s linear;
+		&:hover {
+			transform: translateY(-7px);
+		}
 		@media (max-width: 991px) {
 			width: 350px;
 			height: auto;
