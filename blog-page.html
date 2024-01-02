@@ -80,7 +80,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header-bottom-btn button" type="button">
+                    <button class="header-bottom-btn button open-modal" type="button">
                         Получить консультацию
                     </button>
                 </div>
@@ -138,6 +138,29 @@
         <!-- MOBILE NAV end -->
     </header>
     <main>
+        <!-- MODAL START -->
+        <dialog class="modal">
+            <div class="modal-inner">
+                <div class="modal-head">
+                    <img src="./img/modal-logo.png" alt="Логотип клиники Dental-Tooth">
+                    <button class="close-modal">
+                        <span class="close-line"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-title">Получить консультацию</h2>
+                    <form class="modal-form" action="formdata.php" method="post" name="form-modal">
+                        <p><input class="modal-name" placeholder="Ваше имя" type="text"></p>
+                        <p><input class="modal-phone" placeholder="Ваш телефон" type="text" name="phone"></p>
+                        <p><input class="modal-btn" type="submit" value="Отправить"></p>
+                    </form>
+                    <p class="modal-agree">
+                        Нажимая кнопку, я даю свое согласие на обработку моих персональных данных
+                    </p>
+                </div>
+            </div>
+        </dialog>
+        <!-- MODAL END -->
         <!-- BREADCRUMB START -->
         <section class="breadcrumbs">
             <div class="container">

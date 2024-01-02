@@ -7,5 +7,24 @@ $(document).ready(function () {
 		$('.mobile-nav').toggleClass('is-active'); /* Открывает меню для мобильных устройств */
 		$('body').toggleClass('stop-scroll'); /* Скрывает скрол при открытитии мобильного меню */
 	});
-
 });
+
+
+// МОДАЛЬНОЕ ОКНО
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+const modal = document.querySelector('.modal');
+
+openModal.addEventListener('click', function () { 
+    modal.showModal();
+});
+closeModal.addEventListener('click', function () { 
+    modal.close();
+});
+
+modal.addEventListener('click', function (e) { 
+    if (e.target === modal) {
+        modal.close();
+    }
+});
+

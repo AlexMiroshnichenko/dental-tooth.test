@@ -115,8 +115,11 @@
 		}	
 		
 		&-btn {
-			width: 255px;
-			height: 59px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px 30px;
+			width: 250px;
 			border-radius: 29px;
 			@media (max-width: 991px) {
 				width: 200px;
