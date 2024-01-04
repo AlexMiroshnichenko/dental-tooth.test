@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a,
 a:visited,
 a:hover {
@@ -62,17 +66,12 @@ input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 button::-moz-focus-inner {
   padding: 0;
   border: none;
   background-color: transparent;
-  cursor: pointer;
-}
-
-label {
   cursor: pointer;
 }
 
