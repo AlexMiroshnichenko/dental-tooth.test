@@ -4,7 +4,7 @@
   left: 0;
   z-index: 15;
   width: 100%;
-  
+
   /* Header top start */
   &-top {
     display: flex;
@@ -14,7 +14,7 @@
 
     &-location {
       padding-left: 30px;
-      background-image: url("../img/location.svg");
+      background-image: url('../img/location.svg');
       background-repeat: no-repeat;
       background-position: left, center;
       background-size: 20px 20px;
@@ -48,7 +48,7 @@
     &-phone {
       margin-right: 30px;
       padding-left: 25px;
-      background-image: url("../img/phone.svg");
+      background-image: url('../img/phone.svg');
       background-repeat: no-repeat;
       background-position: left, center;
       background-size: 16px 16px;
@@ -57,7 +57,7 @@
 
     &-email {
       padding-left: 35px;
-      background-image: url("../img/envelope.svg");
+      background-image: url('../img/envelope.svg');
       background-repeat: no-repeat;
       background-position: left, center;
       background-size: 23px 19px;
@@ -124,7 +124,8 @@
       line-height: 1.5;
       text-align: center;
       color: $white-color;
-      transition:  0.5s ease-in-out;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
       cursor: pointer;
       @media (max-width: 575px) {
         max-width: 180px;
@@ -139,7 +140,7 @@
       }
     }
     .button::before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: -1;
       top: 0;
@@ -189,7 +190,7 @@
     }
   }
   .nav ul li a::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     bottom: 0;
